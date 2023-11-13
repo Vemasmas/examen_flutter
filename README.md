@@ -24,3 +24,19 @@ Prueba Técnica Flutter - V++
 - El servicio POST responde una respuesta exitosa con código 201.
 - La información del servicio web no es persistente.
 - Se puede utilizar cualquier manejador de estado si se desea.
+
+## Ejemplo
+
+### Litado de publicaciones
+
+![Sample](./images/sample_0.png)
+
+### Detalle y edición de publicación
+
+![Sample](./images/sample_1.png)
+
+### Creación de nueva publicación
+
+![Sample](./images/sample_2.png)
+
+
