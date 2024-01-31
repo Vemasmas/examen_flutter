@@ -65,3 +65,16 @@ Incluir una funcionalidad para eliminar publicaciones.
 - Persistencia: Recordar que la información en el servicio web no es persistente.
 - Manejo de Estado: Se puede utilizar cualquier manejador de estado si se considera necesario.
 
+## Ejemplo
+
+### Litado de publicaciones
+
+![Sample](./images/sample_0.png)
+
+### Detalle y edición de publicación
+
+![Sample](./images/sample_1.png)
+
+### Creación de nueva publicación
+
+![Sample](./images/sample_2.png)
