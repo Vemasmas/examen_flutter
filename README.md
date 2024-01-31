@@ -4,48 +4,64 @@ Prueba Técnica Flutter - V++
 
 ## Instrucciones
 
-1. Crear una pantalla que muestre un listado de publicaciones desde un recurso de internet.
-2. Incluir un botón para mostrar un diálogo que permita crear una publicación.
+### Objetivo General:
 
-   2.1. Se debe caprturar título y contenido de la publicación.
+Desarrollar una aplicación en Flutter que gestione publicaciones, interactuando con un servicio web dado.
 
-   2.2 Enviar el post a un método POST.``
+### 1. Crear Pantalla con Listado de Publicaciones
 
+#### Descripción:
 
-   2.3 Al crear una publicación la lista principal deberá actualizarse (Preferible agregar al inicio de la lista).
+Diseñar una pantalla que muestre un listado de publicaciones obtenidas de un recurso de internet.
 
-   2.4 EL formulario de creación deberá estár validado con los campos como requeridos.
-4. Al seleccionar una publicación se deberá mostrar un diálogo con los detalles de la publicación y podrán editarse.
+#### Servicio Web:
 
-   3.1. Enviar los datos editados a un método PUT.
+Utilizar el endpoint proporcionado para obtener las publicaciones.
 
-   3.2. Al guardar la publicación el listado principal deberá actualizarse.
-6. Incluir un botón de eliminar publicación.
+#### Aspectos Clave:
 
-   4.1. Consumir un método DELETE para eliminar.
+- Asegurarse de que la lista se cargue correctamente al iniciar la pantalla.
+- Diseñar una interfaz de usuario clara y funcional para mostrar las publicaciones.
 
-   4.2. Al eliminar, actualizar el listado de publicaciones.
+### 2. Funcionalidad para Crear Publicaciones
 
-## Servicio Web
+#### Descripción: 
 
-- La documentación del servicio web a consumir se encuentra en: https://jsonplaceholder.typicode.com/guide/.
-- El userId puede ser siempre igual a 1.
-- El servicio POST responde una respuesta exitosa con código 201.
-- La información del servicio web no es persistente.
-- Se puede utilizar cualquier manejador de estado si se desea.
+Implementar un botón para abrir un diálogo de creación de publicaciones.
 
-## Ejemplo
+#### Requisitos:
+- Captura de Datos: El diálogo debe permitir ingresar el título y contenido de la publicación.
+- Envío de Datos: Enviar los datos capturados a un método POST del servicio web.
+- Actualización de la Lista: Una vez creada la publicación, la lista principal debe actualizarse, preferiblemente agregando la nueva publicación al inicio.
+- Validación de Formulario: Asegurar que todos los campos del formulario sean requeridos y validarlos antes de enviar.
 
-### Litado de publicaciones
+### 3. Editar Publicaciones
 
-![Sample](./images/sample_0.png)
+#### Descripción: 
 
-### Detalle y edición de publicación
+Permitir la edición de publicaciones seleccionadas.
 
-![Sample](./images/sample_1.png)
+#### Requisitos:
 
-### Creación de nueva publicación
+- Envío de Datos Editados: Al seleccionar una publicación, mostrar un diálogo con los detalles que puedan editarse y enviar los cambios a un método PUT del servicio web.
+- Actualización del Listado: Tras guardar los cambios, actualizar el listado principal para reflejar la publicación editada.
 
-![Sample](./images/sample_2.png)
+### 4. Eliminar Publicaciones
+	
+#### Descripción: 
 
+Incluir una funcionalidad para eliminar publicaciones.
+
+#### Requisitos:
+
+- Consumo del Método DELETE: Utilizar un método DELETE del servicio web para eliminar una publicación.
+- Actualización del Listado: Tras eliminar una publicación, actualizar el listado para reflejar este cambio.
+
+### Servicio Web y Detalles Adicionales
+
+- Documentación: Consultar la documentación del servicio web a consumir en https://jsonplaceholder.typicode.com/guide/ para entender cómo interactuar con los endpoints.
+- UserID: Para simplificar, se puede utilizar siempre userId = 1.
+- Respuestas del Servicio Web: Tener en cuenta que el servicio POST responde con un código 201 cuando es exitoso.
+- Persistencia: Recordar que la información en el servicio web no es persistente.
+- Manejo de Estado: Se puede utilizar cualquier manejador de estado si se considera necesario.
 
